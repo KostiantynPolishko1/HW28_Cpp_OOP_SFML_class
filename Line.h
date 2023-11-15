@@ -8,7 +8,9 @@
 class Line final : public sf::VertexArray
 {
 public:
-	Line(const sf::Vector2f& start, const sf::Vector2f& end) 
+	Line() {}
+
+	void createLine(const sf::Vector2f& start, const sf::Vector2f& end) 
 	{
 		this->append(start);
 		this->append(end);
